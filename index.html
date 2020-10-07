@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <title>Weather App</title>
+</head>
+
+<script>
+    $(window).load(function() {
+    $(".se-pre-con").fadeOut("slow");
+});
+</script>
+
+<body>
+    <div class="app-main">
+
+        <div class="searchInputBox">
+            <button class="btn" id="btn" onclick="getWeatherReport(searchInputBox.value);"><i class="fa fa-search"></i></button>
+            <input type="text" id='input-box' class='input-box' placeholder="Enter city name..." autocomplete="off">
+        </div>
+
+        <div class="weather-body">
+            <div class="location-details">
+                <div class="city" id='city'>Muzaffarnagar</div>
+                <div class="date" id='date'>10 june (wednesday) 2020</div>
+            </div>
+
+            <div class="weather-status">
+                <div class="temp" id='temp'>34&deg;C</div>
+                <div class="min-max" id='min-max'>32&deg;C (min) / 34&deg;C (max)</div>
+                <div class="weather" id='weather'>Clear</div>
+                <div class="img" id='img'></div>
+            </div>
+
+            <div class="weather-icon">   
+                <i class='fas fa-temperature-low' id='icon' style='font-size:48px;color:rgb(165, 16, 16)'></i>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="jquery.ripples-min.js"></script>
+</body>
+    <div class="se-pre-con"></div>
+</html>
