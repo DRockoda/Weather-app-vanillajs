@@ -1,10 +1,8 @@
-# Weather-app-vanillajs
-
-Budget-app
+# Weather-app
 Using javaScript this weather app has cool ripple effects along with cool backgrounds and weather data displayed as per the city selected by the user.
 
-Sceenshot
+## Sceenshot
 <img src="ss.JPG" height=450px>
 
-Live demo
+## Live demo
 https://drockoda.github.io/Weather-app-vanillajs/
